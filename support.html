@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Cuimhne</title>
+<style>
+    :root {
+      color-scheme: light dark;
+      --ink: #1a1a1a;
+      --muted: #5f5f68;
+      --rule: #e2e2e6;
+      --ground: #ffffff;
+      --accent: #a06b00;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #e8e6ef;
+        --muted: #a09eaa;
+        --rule: #33313f;
+        --ground: #17161f;
+        --accent: #fbbf24;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0 20px 80px;
+      background: var(--ground);
+      color: var(--ink);
+      font: 17px/1.6 Georgia, "Iowan Old Style", "Times New Roman", serif;
+      -webkit-text-size-adjust: 100%;
+    }
+    main { max-width: 34rem; margin: 0 auto; }
+    header { padding: 56px 0 8px; }
+    header img { width: 72px; height: 72px; border-radius: 16px; display: block; }
+    h1 { font-size: 1.9rem; font-weight: normal; margin: 22px 0 4px; line-height: 1.2; }
+    h2 {
+      font-size: 0.82rem; font-weight: normal; letter-spacing: 0.13em;
+      text-transform: uppercase; color: var(--muted);
+      margin: 40px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--rule);
+    }
+    h3 { font-size: 1.05rem; font-weight: normal; font-style: italic; margin: 26px 0 4px; }
+    p, li { margin: 0 0 14px; }
+    ul { padding-left: 20px; }
+    a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--rule); }
+    a:hover { border-bottom-color: var(--accent); }
+    .lede { color: var(--muted); font-style: italic; margin-bottom: 8px; }
+    .date { font-size: 0.82rem; color: var(--muted); letter-spacing: 0.06em; }
+    code {
+      font-family: ui-monospace, "SF Mono", Menlo, monospace;
+      font-size: 0.86em; background: var(--rule); padding: 1px 5px; border-radius: 4px;
+    }
+    footer {
+      margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--rule);
+      font-size: 0.86rem; color: var(--muted);
+    }
+    nav a { margin-right: 18px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Support</h1>
+<p class="lede">A way to record your life in whatever way you choose.</p>
+
+<h2>Common questions</h2>
+
+<h3>Where is my diary kept?</h3>
+<p>On your device, and in your own private iCloud if sync is on. Nothing is sent
+anywhere else. See the <a href="privacy.html">privacy policy</a>.</p>
+
+<h3>Can I get my writing back out?</h3>
+<p>Yes, and without needing this app. <strong>Archive → Save Archive</strong>
+writes a <code>.lifediary</code> file, which is an ordinary zip — rename it
+<code>.zip</code> and you will find the photographs as files and the words in
+<code>diary.json</code> beside them.</p>
+
+<h3>Why is my entry filed under the wrong date?</h3>
+<p>Entries are filed by when the event <em>happened</em>, not when you wrote it
+up. Edit the entry and change the date at the top. A photograph shared into the
+app brings its own date with it from the camera.</p>
+
+<h3>The sidebar says “Temporary — not saved”.</h3>
+<p>Another copy of Cuimhne is already running and holding the diary. Quit that
+one and reopen this. Nothing written into a window showing that warning is
+kept.</p>
+
+<h3>My photographs are using a lot of iCloud storage.</h3>
+<p>Settings shows what the diary holds and roughly what share of a free iCloud
+account that is. Photographs are reduced to 2560px and video to 1080p on the way
+in, unless you choose <em>Original quality</em>.</p>
+
+<h3>Can I keep more than one diary?</h3>
+<p>Yes — More → Diaries. Each can have its own passcode. A passcode is a lock,
+not encryption: it keeps a casual reader out, and is not proof against somebody
+with access to the device's files.</p>
+
+<h3>The text is too small.</h3>
+<p>Settings → Reading → Text size, up to Largest. You can also pinch on an
+entry.</p>
+
+<h2>Printing</h2>
+<p><strong>Print a Book</strong> makes a PDF: serif type, generous margins, a
+year on each section divider, photographs at column width with captions, and a
+contents page. One entry, a range of dates, or a whole life, and it can be
+filtered to a single tag.</p>
+
+<h2>Getting in touch</h2>
+<p><a href="mailto:88_intake.troupes@icloud.com">88_intake.troupes@icloud.com</a></p>
+<footer>
+  <nav><a href="index.html">Cuimhne</a><a href="privacy.html">Privacy</a></nav>
+  <p>Cuimhne · <a href="mailto:88_intake.troupes@icloud.com">88_intake.troupes@icloud.com</a></p>
+</footer>
+</main>
+</body>
+</html>
+
