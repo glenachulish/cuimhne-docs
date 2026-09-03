@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Cuimhne</title>
+<style>
+    :root {
+      color-scheme: light dark;
+      --ink: #1a1a1a;
+      --muted: #5f5f68;
+      --rule: #e2e2e6;
+      --ground: #ffffff;
+      --accent: #a06b00;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #e8e6ef;
+        --muted: #a09eaa;
+        --rule: #33313f;
+        --ground: #17161f;
+        --accent: #fbbf24;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0 20px 80px;
+      background: var(--ground);
+      color: var(--ink);
+      font: 17px/1.6 Georgia, "Iowan Old Style", "Times New Roman", serif;
+      -webkit-text-size-adjust: 100%;
+    }
+    main { max-width: 34rem; margin: 0 auto; }
+    header { padding: 56px 0 8px; }
+    header img { width: 72px; height: 72px; border-radius: 16px; display: block; }
+    h1 { font-size: 1.9rem; font-weight: normal; margin: 22px 0 4px; line-height: 1.2; }
+    h2 {
+      font-size: 0.82rem; font-weight: normal; letter-spacing: 0.13em;
+      text-transform: uppercase; color: var(--muted);
+      margin: 40px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--rule);
+    }
+    h3 { font-size: 1.05rem; font-weight: normal; font-style: italic; margin: 26px 0 4px; }
+    p, li { margin: 0 0 14px; }
+    ul { padding-left: 20px; }
+    a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--rule); }
+    a:hover { border-bottom-color: var(--accent); }
+    .lede { color: var(--muted); font-style: italic; margin-bottom: 8px; }
+    .date { font-size: 0.82rem; color: var(--muted); letter-spacing: 0.06em; }
+    code {
+      font-family: ui-monospace, "SF Mono", Menlo, monospace;
+      font-size: 0.86em; background: var(--rule); padding: 1px 5px; border-radius: 4px;
+    }
+    footer {
+      margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--rule);
+      font-size: 0.86rem; color: var(--muted);
+    }
+    nav a { margin-right: 18px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Privacy Policy</h1>
+<p class="date">Last updated 1 September 2026</p>
+
+<h2>The short version</h2>
+<p>Cuimhne collects nothing. There is no account, no analytics, no
+advertising, and no third-party code of any kind. Your diary is on your own
+devices and, if you turn on iCloud, in your own private iCloud database. The
+developer cannot see any of it.</p>
+
+<h2>What the app stores, and where</h2>
+<p>Everything you put into Cuimhne — entries, dates, tags, background such as
+schools and jobs, photographs, video, voice notes, documents and places — is
+stored <strong>on your device</strong>.</p>
+<p>If iCloud sync is switched on, that same information is also stored in
+<strong>your own private CloudKit database</strong>, which is part of your
+personal iCloud account. Apple provides that storage; the developer has no
+access to it and no way to obtain access. Nothing is stored on any server
+belonging to the developer, because there is no such server.</p>
+
+<h2>What is sent over the network</h2>
+<p>Only iCloud sync, and only if you enable it. The app contains no networking
+code of its own — no web requests, no telemetry. If you never turn on iCloud,
+Cuimhne never uses the network at all.</p>
+
+<h2>Permissions, and why</h2>
+<ul>
+  <li><strong>Photo library</strong> — so you can attach photographs and video to
+  an entry. The app reads only what you choose.</li>
+  <li><strong>Microphone</strong> — only when you tap record, to make a voice note
+  saved into the entry.</li>
+  <li><strong>Location</strong> — only when you tap <em>Use Current Location</em>.
+  Location is never read in the background.</li>
+</ul>
+<p>Declining any of these leaves the rest of the app working normally.</p>
+
+<h2>Passcodes</h2>
+<p>A diary can be given a passcode. The passcode itself is never stored: what is
+saved is a salted SHA-256 hash of it, and the app can only check whether a typed
+passcode matches.</p>
+<p><strong>This is a lock, not encryption.</strong> It keeps a casual reader out
+of a diary on a shared device. It does not encrypt the contents, and somebody
+with access to the device's files could read the diary without the passcode. It
+is not represented as more than that anywhere in the app.</p>
+
+<h2>Children</h2>
+<p>Cuimhne is a personal diary with no accounts, no messaging, no content
+shared with anyone, and no data collection. It gathers nothing from anybody, of
+any age.</p>
+
+<h2>Your data is yours</h2>
+<p>Everything can be exported at any time from <strong>Archive → Save
+Archive</strong>. The resulting <code>.lifediary</code> file is an ordinary zip:
+rename it <code>.zip</code> and the photographs are in there as normal files,
+with the words alongside them in <code>diary.json</code>. Nothing about that
+format needs this app to read it, which is deliberate — a diary you cannot get
+out of the app is not really yours.</p>
+<p>Deleting the app deletes its local data. Diaries synced to iCloud can be
+removed in Settings under your name → iCloud → Manage Account Storage.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version will appear at this address with a new
+date at the top.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:88_intake.troupes@icloud.com">88_intake.troupes@icloud.com</a></p>
+<footer>
+  <nav><a href="index.html">Cuimhne</a><a href="support.html">Support</a></nav>
+  <p>Cuimhne · <a href="mailto:88_intake.troupes@icloud.com">88_intake.troupes@icloud.com</a></p>
+</footer>
+</main>
+</body>
+</html>
+
